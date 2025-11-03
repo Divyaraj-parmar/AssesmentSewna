@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sewna | Your Fashion Partner</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      background: linear-gradient(to bottom right, #f8f9fa, #e9ecef);
+      color: #333;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+
+    header {
+      text-align: center;
+      margin-bottom: 60px;
+      animation: fadeInDown 1s ease-in-out;
+    }
+
+    header h1 {
+      font-size: 2.5rem;
+      color: #212529;
+    }
+
+    header p {
+      color: #555;
+      font-size: 1.1rem;
+      margin-top: 8px;
+    }
+
+    .container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 60px;
+      flex-wrap: wrap;
+      animation: fadeInUp 1.2s ease-in-out;
+    }
+
+    .card {
+      background-color: #fff;
+      border-radius: 15px;
+      box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+      text-align: center;
+      width: 280px;
+      padding: 20px;
+      transition: all 0.3s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+    }
+
+    .card img {
+      width: 100%;
+      height: 250px;
+      object-fit: contain;
+      background-color: #f5f5f5;
+      border-radius: 12px;
+      margin-bottom: 20px;
+    }
+
+    button {
+      background-color: #28a745;
+      color: white;
+      border: none;
+      padding: 12px 20px;
+      border-radius: 8px;
+      font-size: 1rem;
+      cursor: pointer;
+      transition: all 0.3s ease;
+    }
+
+    button:hover {
+      background-color: #218838;
+      transform: scale(1.05);
+    }
+
+    footer {
+      position: absolute;
+      bottom: 20px;
+      font-size: 0.9rem;
+      color: #777;
+    }
+
+    @keyframes fadeInDown {
+      from {
+        opacity: 0;
+        transform: translateY(-20px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    @keyframes fadeInUp {
+      from {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Welcome to <span style="color:#28a745;">Sewna</span></h1>
+    <p>Your one-stop solution for all your fashion needs</p>
+  </header>
+
+  <main>git 
+    <div class="container">
+      <div class="card">
+        <img src="https://www.joinsewna.com/static/media/designer.80f7a2565c25f4bb9918.jpeg" alt="I am Designer" />
+        <button id="btnDesigner">I am a Designer</button>
+      </div>
+
+      <div class="card">
+        <img src="https://www.joinsewna.com/static/media/img9_151W.dab4600f286264b47ee8.webp" alt="I need a Designer" />
+        <button id="btnCustomer">I need a Designer</button>
+      </div>
+    </div>
+  </main>
+
+  <footer>© 2025 Sewna. All rights reserved.</footer>
+
+  <script>
+    const btnDesigner = document.getElementById("btnDesigner");
+    const btnCustomer = document.getElementById("btnCustomer");
+
+    btnCustomer.addEventListener("click", () => {
+      location.href = "designers/designers.html";
+    });
+  </script>
+</body>
+</html>
